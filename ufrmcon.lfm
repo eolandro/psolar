@@ -1,0 +1,65 @@
+object Frmcon: TFrmcon
+  Left = 3
+  Height = 240
+  Top = 21
+  Width = 109
+  ActiveControl = cbbox
+  Caption = 'Frmcon'
+  ClientHeight = 240
+  ClientWidth = 109
+  FormStyle = fsSystemStayOnTop
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.0.6.0'
+  object Btnexit: TButton
+    Left = 24
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = '&Salir'
+    OnClick = BtnexitClick
+    TabOrder = 0
+  end
+  object cbbox: TComboBox
+    Left = 8
+    Height = 31
+    Top = 24
+    Width = 100
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Sol'
+      'Mercurio'
+      'Venus'
+      'Tierra'
+      'Marte'
+      'Asterorides'
+      'Jupiter'
+      'Saturno'
+      'Urano'
+      'Neptuno'
+    )
+    OnChange = cbboxChange
+    TabOrder = 1
+    Text = 'Sol'
+  end
+  object CkB: TCheckBox
+    Left = 5
+    Height = 23
+    Top = 79
+    Width = 119
+    Caption = 'Ride Asterix'
+    OnChange = CkBChange
+    TabOrder = 2
+  end
+  object ckb1: TCheckBox
+    Left = 5
+    Height = 23
+    Top = 112
+    Width = 115
+    Caption = 'Ride comet'
+    OnChange = ckb1Change
+    TabOrder = 3
+  end
+end
